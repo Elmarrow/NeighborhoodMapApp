@@ -8,7 +8,7 @@ This project was created using ```create-react-app```. Please run the project in
 
 ## Prerequisite Information
 
- This project makes use of both Google Maps & Foursquare API's. In order to do this effectively I have integrated these two libraries:
+ This project makes use of both Google Maps & Foursquare API's. For the sidebar search functionality the React Burger Menu library was used. All these three libraries were used for the completion of the project:
  
  React Foursquare Library:
  

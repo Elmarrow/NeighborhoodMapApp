@@ -183,7 +183,7 @@ class App extends Component {
 		return (
 		<div className = "App">
 			<header className = "App-header">
-			<	h1 className = "App-title"> Neighborhood Maps Project - Cools spots in Athens</h1> 
+			<	h1 className = "App-title"> Neighborhood Maps Project - Cool spots in Athens</h1> 
 			</header> 
 			<div>
 			<Menu width = {"32%"}
