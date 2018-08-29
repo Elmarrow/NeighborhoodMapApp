@@ -195,6 +195,9 @@ class App extends Component {
 			</div>
 			<footer>
 			<p>FEND Final Project - Made with ReactJS - <a href='https://github.com/Elmarrow/NeighborhoodMapApp'>GitHub</a></p>
+			<script>	
+			{alert("Google maps failed to load! There is a problem with the API key. Please contact the administrator.")}
+			</script>
 		</footer>
 			</div>
 			
