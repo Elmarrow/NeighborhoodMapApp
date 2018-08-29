@@ -4,7 +4,7 @@ import "./App.css";
 
 function Filtering(props){
     let locationsList = props.FilteredLocations.map((location) =>
-	<li className="myLi" tabIndex="0" key={location.venueID} onClick={()=> props.handleLocationClick(location.venueID)}><a>{location.title}</a></li>
+	<li id="venuesList" tabIndex="0" key={location.venueID} onClick={()=> props.handleLocationClick(location.venueID)}><a>{location.title}</a></li>
 	);
 
 return (

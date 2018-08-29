@@ -15,8 +15,11 @@
 	color: black;
 }
 
-@media only screen and (max-device-width: 568px){
+@media all and (max-width: 668px){
 	.App-title {
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
 		font-size: 0.9em;
 	}
 }
@@ -27,47 +30,51 @@
 	margin: 5px;
 }
 
-@media only screen and (max-device-width: 568px){
-	#venuesList li a {
-		width: 5rem;
+@media only screen and (max-width: 668px){
+	#form {
+		width:30rem;
 	}
 }
-
 #searchField {
 	font-size: 14px;
 	padding: 10px 12px 12px 20px;
 	text-align: center;
 }
 
-@media only screen and (max-device-width: 568px){
-	#searchField {
-		padding:2 px 3px 3px 7px;
-		font-size: 10px;
+@media only screen and (max-width: 568px){
+	#searchField, input {
+		margin-top: 20px;
+		padding:2px;
+		font-size: small;
+		width: 65px;
 	}
 }
 
 #venuesList {
 	list-style-type: none;
 	padding: 0;
-	margin: 2rem;
+	margin: 1.5rem;
 	text-align: center;
 	background-color: 373a47;
+	height:100%;
 }
+
 
 #venuesList li a {
 	margin-top: -1px;
 	background-color: #373a47;
-	padding: 12px;
+	padding: 2px;
 	text-decoration: none;
 	font-size: 18px;
 	color: white;
 	display: block;
 }
 
-@media only screen and (max-device-width: 568px){
-	#venuesList li a {
+@media only screen and (max-width: 668px){
+	#venuesList, #venuesList li a {
 		font-size: 55%;
 		padding: 5px;
+		margin: 0;
 	}
 }
 
@@ -83,6 +90,15 @@
 	height: 30px;
 	left: 36px;
 	top: 36px;
+}
+
+@media only screen and (max-width: 668px){
+	.bm-burger-button {
+	width: 18px;
+	height: 17px;
+	left: 18px;
+	top: 18px;
+	}
 }
 
 /* Color/shape of burger icon bars */
@@ -110,6 +126,15 @@
 	background: #373a47;
 	padding: 2.5em 1.5em 0;
 	font-size: 1.15em;
+}
+
+@media only screen and (max-width: 668px){
+	.bm-menu {
+		padding: 4px;
+		font-size: medium;
+		width: auto;
+		height: 100%;
+	}
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -145,4 +170,5 @@
 
 footer {
 	font-size: small;
+	color: slategray;
 }
