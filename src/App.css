@@ -15,19 +15,38 @@
 	color: black;
 }
 
+@media only screen and (max-device-width: 568px){
+	.App-title {
+		font-size: 0.9em;
+	}
+}
+
 #form {
 	width: 25rem;
 	height: 100%;
 	margin: 5px;
 }
 
-#myInput {
+@media only screen and (max-device-width: 568px){
+	#venuesList li a {
+		width: 5rem;
+	}
+}
+
+#searchField {
 	font-size: 14px;
 	padding: 10px 12px 12px 20px;
 	text-align: center;
 }
 
-#myUL {
+@media only screen and (max-device-width: 568px){
+	#searchField {
+		padding:2 px 3px 3px 7px;
+		font-size: 10px;
+	}
+}
+
+#venuesList {
 	list-style-type: none;
 	padding: 0;
 	margin: 2rem;
@@ -35,7 +54,7 @@
 	background-color: 373a47;
 }
 
-#myUL li a {
+#venuesList li a {
 	margin-top: -1px;
 	background-color: #373a47;
 	padding: 12px;
@@ -45,7 +64,14 @@
 	display: block;
 }
 
-#myUL li a:hover:not(.header) {
+@media only screen and (max-device-width: 568px){
+	#venuesList li a {
+		font-size: 55%;
+		padding: 5px;
+	}
+}
+
+#venuesList li a:hover:not(.header) {
 	background-color: #da5040;
 }
 
@@ -109,4 +135,14 @@
 
 .bm-overlay {
 	background: rgba(0, 0, 0, 0.3);
+}
+
+.img {
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+}
+
+footer {
+	font-size: small;
 }

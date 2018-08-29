@@ -1,20 +1,17 @@
-import React, {
-	Component
-} from "react";
-import ReactDOMServer from "react-dom/server";
+import React, {Component} from "react";
+
 import ReactDOM from "react-dom";
 import "./App.css";
 import {slide as Menu} from "react-burger-menu";
 import {MapStyle} from './Mapstyles.js';
 import {locationData} from './Locations.js';
-import Foursquare from "./Foursquare.js";
+import Foursquare from "./FoursquareAPI";
 import FilterForm from "./FilterForm.js";
 
 
 let _this;
 let map;
 let markers = [];
-let marker;
 let iw;
 
 class App extends Component {
@@ -154,7 +151,7 @@ class App extends Component {
 	render() {
 		// before rendering check filtered state for map markers
 		let markersToShow = []
-		let markersToHide = []
+		let markersToHide = []	
 		let renderMarkers = markers
 		let renderedLocations = this.state.filteredLocations
 		let moveThisID = []
@@ -175,7 +172,7 @@ class App extends Component {
 						mark.setVisible(false)
 					});
 				} else {
-					alert("oops! that didn\"t work")
+					alert("oops! that didn't work")
 				}
 			}
 		}
@@ -183,7 +180,7 @@ class App extends Component {
 		return (
 		<div className = "App">
 			<header className = "App-header">
-			<	h1 className = "App-title"> Neighborhood Maps Project - Cool spots in Athens</h1> 
+			<h1 className = "App-title"> Neighborhood Maps Project - Cool spots in Athens</h1> 
 			</header> 
 			<div>
 			<Menu width = {"32%"}
@@ -197,7 +194,11 @@ class App extends Component {
 			</div>
 			<div id = "map">
 			</div>
+			<footer>
+			<p>FEND Final Project - Made with ReactJS - <a href='https://github.com/Elmarrow/NeighborhoodMapApp'>GitHub</a></p>
+		</footer>
 			</div>
+			
 		);
 	}
 }
