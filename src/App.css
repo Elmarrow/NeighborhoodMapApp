@@ -172,3 +172,8 @@ footer {
 	font-size: small;
 	color: slategray;
 }
+
+.gm-err-title::after {
+	margin: 10px;
+	content: "The problem is with the Google Maps API key of this Project. Please contact the administrator   ";
+}
