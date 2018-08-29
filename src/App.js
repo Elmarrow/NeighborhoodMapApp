@@ -6,8 +6,7 @@ import {slide as Menu} from "react-burger-menu";
 import {MapStyle} from './Mapstyles.js';
 import {locationData} from './Locations.js';
 import Foursquare from "./FoursquareAPI";
-import FilterForm from "./FilterForm.js";
-
+import Filtering from "./Filtering";
 
 let _this;
 let map;
@@ -106,6 +105,7 @@ class App extends Component {
 			});
 		}
 	}
+
 	// Filter menu options on text input
 	handleTextFilter(event) {
 		let initialState = this.state.initialLocations
@@ -147,7 +147,6 @@ class App extends Component {
 		})
 	}
 
-
 	render() {
 		// before rendering check filtered state for map markers
 		let markersToShow = []
@@ -186,7 +185,7 @@ class App extends Component {
 			<Menu width = {"32%"}
 			isOpen = {this.state.menuOpen}
 			onStateChange = {(state) => this.handleStateChange(state)}>
-			<FilterForm FilteredLocations = {this.state.filteredLocations}
+			<Filtering FilteredLocations = {this.state.filteredLocations}
 			handleTextFilter = {this.handleTextFilter.bind(this)}
 			handleLocationClick = {this.handleLocationClick}
 			/> 
