@@ -35,7 +35,7 @@ class Foursquare extends Component {
 	render() {
 	if (!this.state.items) {
 		let formattedAddress = null
-		return "Loading...";
+		return "Fetching Data...";
 	} else {
 		let formattedAddress = this.state.items.location.address
 		return (
