@@ -4,14 +4,14 @@ import "./App.css";
 
 function Filtering(props){
     let locationsList = props.FilteredLocations.map((location) =>
-	<li id="venuesList" tabIndex="0" key={location.venueID} onClick={()=> props.handleLocationClick(location.venueID)}><a>{location.title}</a></li>
+	<li tabIndex="0" id="venuesList" role="button" key={location.venueID} onClick={()=> props.handleLocationClick(location.venueID)}><a>{location.title}</a></li>
 	);
 
 return (
       <div>
       <form>
         <label>
-          <input type="text" id="searchField" placeholder="Search" onChange={(event) => props.handleTextFilter(event)} />
+          <input aria-label="Search input field" type="text" id="searchField" placeholder="Search" onChange={(event) => props.handleTextFilter(event)} />
           <ul id="venuesList">
             {locationsList}
           </ul>

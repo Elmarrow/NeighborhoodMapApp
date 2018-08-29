@@ -42,8 +42,8 @@ class Foursquare extends Component {
 		<div>
 		<div ref="testin"></div>
 			<div key={this.state.items.id}>
-			<h3>{this.state.items.name}</h3>
-			<p><strong>Address:</strong>  {formattedAddress}</p>
+			<h3 aria-label="Venue Name">{this.state.items.name}</h3>
+			<p aria-label="Venue Address"><strong>Address:</strong>  {formattedAddress}</p>
 			<p><strong>Data Provider: </strong><img className="img" src={logo} alt={"Foursquare logo"}/></p>
 		</div>
 		</div>
